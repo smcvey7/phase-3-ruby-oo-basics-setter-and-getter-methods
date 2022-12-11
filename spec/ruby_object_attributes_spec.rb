@@ -11,7 +11,6 @@ describe 'Dog' do
       it 'writes the name of the dog to an instance variable @name' do
         fido = Dog.new
         fido.name = "Fido"
-
         expect(fido.instance_variable_get(:@name)).to eq("Fido")
       end
     end
